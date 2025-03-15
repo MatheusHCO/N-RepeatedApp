@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Faz a label ocupar a linha inteira */
+    margin-top: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ocupa a largura total do container */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px 0; /* Ajuste no margin para alinhar com as mensagens */
+    width: 100%; /* Ocupa a largura total do container */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#limparMemoriaBtn {
+    background-color: #dc3545; /* Vermelho */
+}
+
+#limparMemoriaBtn:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
+}
+
+#exportarPDFBtn {
+    background-color: #007bff; /* Azul */
+}
+
+#exportarPDFBtn:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+#resultadoAnalise {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.mensagem {
+    display: none; /* Oculta a mensagem por padrão */
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeOut 3s ease-in-out; /* Animação para desaparecer */
+    width: 100%; /* Ocupa a largura total do container */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}

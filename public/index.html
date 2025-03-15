@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Análise de Jogos</h1>
+
+        <!-- Campo para adicionar jogos manualmente -->
+        <div>
+            <label for="numerosInput">Adicionar Jogo Manualmente (números separados por vírgula):</label>
+            <input type="text" id="numerosInput" placeholder="Ex: 1, 2, 3, 4, 5, 8, 10, 12, 16, 18, 20, 21, 23, 24, 25">
+            <button id="adicionarJogoBtn">Adicionar Jogo</button>
+        </div>
+
+        <!-- Campo para informar quantos números exibir -->
+        <div>
+            <label for="quantidadeNumeros">Quantos números exibir:</label>
+            <input type="number" id="quantidadeNumeros" placeholder="Ex: 5" min="1">
+        </div>
+
+        <!-- Mensagem de sucesso ao adicionar jogo -->
+        <div id="mensagemSucesso" class="mensagem">Jogo adicionado com sucesso!</div>
+
+        <!-- Mensagem de sucesso ao limpar memória -->
+        <div id="mensagemLimpezaSucesso" class="mensagem">Memória limpa com sucesso!</div>
+
+        <!-- Botão para limpar a memória -->
+        <button id="limparMemoriaBtn">Limpar Memória</button>
+
+        <!-- Botão para exportar para PDF -->
+        <button id="exportarPDFBtn">Exportar para PDF</button>
+
+        <button id="analisarBtn">Analisar Jogos</button>
+        <div id="resultadoAnalise"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
